@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.head {
+    margin-top: 3rem;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.crypto-box {
+    display: flex;
+    text-align: start;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 4rem;
+}
+
+.card {
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.2rem;
+    background-color: aquamarine;
+    margin: 1.2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+}
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Tıklama efekti için box-shadow değiştirildi */
+  }
+
+.card .image {
+    width: 4rem;
+    height: auto;
+    padding: 0.3rem;
+    margin: 1rem;
+}
+.card p{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.btns {
+    background-color: #3b66c2;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  .card .button-container {
+    margin-top: 0.5rem; /* btn konteynerini en altta hizalar */
+    display: flex;
+    justify-content: center;
+  }
+  #pagination{
+   margin-top: 12rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+
+  button{
+    background-color: #3b66c2;
+    border: none;
+    color: white;
+    padding: 4px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+  }
+  button:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  button.active {
+    background-color: #f44336; /* Aktif sayfa düğmesi için yeni arkaplan rengi */
+  }
+
+
+
+  @media screen and (max-width: 700px) {
+    .crypto-box {
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .card {
+      flex: 0 0 calc(50% - 1.2rem); /* İki sütun için genişlik hesaplanırken boşluk da dikkate alınır */
+      width: 100%;
+      max-width: 220px;
+      margin: 0.6rem;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .card:nth-child(odd) {
+      margin-right: 0; /* Tek sıradaki card'ların sağ tarafındaki boşluğu kaldırır */
+    }
+  
+    .card .image {
+      width: 3.8rem;
+      height: auto;
+      padding: 0.3rem;
+      margin: 1rem;
+    }
+  
+    .card p {
+      font-family: sans-serif;
+      font-weight: 400;
+      font-size: 0.8rem;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .btns {
+      background-color: #3b66c2;
+      border: none;
+      color: white;
+      padding: 6px 24px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+  
+    .card .button-container {
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: center;
+    }
+  
+    h3 {
+      font-size: 0.9rem;
+    }
+    #pagination{
+        margin-top: 12rem;
+        margin-bottom: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+  }
+  
