@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+  }
+  html{
+    font-size: 1rem;
+  }
+  h1 {
+    color: #333;
+
+  }
+  .logout-button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  input[type=text]{
+    background-color: #9ab0e0;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  input[type=password]{
+    background-color: #9ab0e0;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  input[type=submit]{
+    margin-top: 2rem;
+    background-color: #3b66c2;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#f1f1f1;
+  }
+  
+  .form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .form-f{
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.6rem;
+  }
+  .form-g{
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.6rem;
+  }
+  .error-message {
+    color: red;
+    text-align: center;
+  }
+
+  /***   ******/
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.head {
+    margin-top: 3rem;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+   
+}
+
+
+.crypto-box {
+    display: flex;
+    text-align: start;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 4rem;
+}
+
+.card {
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.2rem;
+    background-color: aquamarine;
+    margin: 1.2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+}
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Tıklama efekti için box-shadow değiştirildi */
+  }
+
+.card .image {
+    width: 4rem;
+    height: auto;
+    padding: 0.3rem;
+    margin: 1rem;
+}
+.card p{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.btns {
+    background-color: #3b66c2;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  .card .button-container {
+    margin-top: 0.5rem; /* btn konteynerini en altta hizalar */
+    display: flex;
+    justify-content: center;
+  }
+  #pagination{
+   margin-top: 6rem;
+   margin-bottom: 6rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+
+  button{
+    background-color: #3b66c2;
+    border: none;
+    color: white;
+    padding: 4px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(163, 159, 159, 0.2);
+    transition: box-shadow 0.3s;
+  }
+  button:hover{
+    box-shadow: 0 4px 8px rgba(218, 209, 209, 0.4);
+  }
+  button.active {
+    background-color: #f44336; /* Aktif sayfa düğmesi için yeni arkaplan rengi */
+  }
+  @media screen and (max-width: 720px) {
+     h1{
+      font-size: 1rem;
+     }
+     p{
+      font-size: 1rem;
+     }
+    .crypto-box {
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .card {
+      flex: 0 0 calc(50% - 1.2rem); /* İki sütun için genişlik hesaplanırken boşluk da dikkate alınır */
+      width: 100%;
+      max-width: 220px;
+      margin: 0.6rem;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .card:nth-child(odd) {
+      margin-right: 0; /* Tek sıradaki card'ların sağ tarafındaki boşluğu kaldırır */
+    }
+  
+    .card .image {
+      width: 3.8rem;
+      height: auto;
+      padding: 0.3rem;
+      margin: 1rem;
+    }
+    
+    .card p {
+      font-family: sans-serif;
+      font-weight: 400;
+      font-size: 0.8rem;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .btns {
+      background-color: #3b66c2;
+      border: none;
+      color: white;
+      padding: 6px 24px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+  
+    .card .button-container {
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: center;
+    }
+  
+    h3 {
+      font-size: 0.9rem;
+    }
+    #pagination{
+        margin-top: 12rem;
+        margin-bottom: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+  }
+  .headtext{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 2rem;
+  }
+  .headc
+    {
+  font-weight: 500;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  margin: 10px;
+}  
+.headtext p{
+    margin-left: 10px;
+  }
+  .frm{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .loader {
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  #userTag{
+    text-transform: uppercase;
+  }

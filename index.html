@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto App Js</title>
+    <title>Loging</title>
 </head>
 <body>
-    <main>
-        <h2 class="head">Cryptos</h2>
-        <div class="crypto-box" id="crypto-box">
-               
-         </div>
-         <div id="content"></div>
-         <div id="pagination"></div>
-         
-    </main>
-    <script src="index.js"></script>
+    <div class="container">
+       <div class="headc">Login Crypto App</div>
+       <div class="form-container">
+        <form action="/login" method="POST">
+             <div class="form-f">
+              <label for="username" class="la"></label>
+              <input type="text" id="username" name="username" required placeholder="Username">
+             </div>
+             <div class="form-g">
+              <label for="password" class="l" ></label>
+              <input type="password" id="password" name="password" required placeholder="Password">
+              <input type="submit" value="Giriş"><br>
+              <a href="/register" class="button">Kayıt Ol</a>
+             </div>
+          </div>
+        </form>
+
+        <div class="msg"><p id="msgP"></p></div>
+      </div>
 </body>
 </html>
